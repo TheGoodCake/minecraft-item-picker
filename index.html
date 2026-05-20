@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Item Picker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- ================= TITLE ================= -->
+  <header class="header">
+    <h1 class="sr-only">Minecraft Item Picker</h1>
+    <div class="header-inner">
+      <div class="logo-wrapper">
+        <img src="images/utils/minecraft.png" alt="Minecraft" class="logo-img">
+        <span class="mc-splash">Item Picker</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- ================= OPTIONS ================= -->
+    <section id="options" class="options-section">
+      <div class="options-row">
+        <label class="mc-switch">
+          <input type="checkbox" id="recipesOnly">
+          <span class="mc-slider"></span>
+          <span>Only items with recipes</span>
+        </label>
+        <label class="mc-switch">
+          <input type="checkbox" id="easyOnly">
+          <span class="mc-slider"></span>
+          <span>Easy Items</span>
+        </label>
+      </div>
+      <p id="itemsCount" class="items-count"></p>
+    </section>
+
+    <!-- ================= MAIN DISPLAY ================= -->
+    <section class="display-section">
+      <div class="card-area">
+        <!-- CARD -->
+        <div class="mc-card" id="mcCard">
+          <div class="mc-card-inner">
+            <!-- FRONT -->
+            <div class="mc-card-face mc-card-front">
+              <div id="itemSlot" class="mc-slot">
+                <img id="itemImg" src="images/utils/unknown.png" alt="Minecraft Item">
+              </div>
+            </div>
+            <!-- BACK -->
+            <div class="mc-card-face mc-card-back">
+              <div id="recipeDisplay" class="recipe-display">
+                <div id="craftingGrid" class="crafting-grid"></div>
+                <div class="recipe-arrow">➡</div>
+                <div id="recipeResult" class="recipe-result"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ITEM NAME -->
+        <h2 id="itemName" class="item-name"></h2>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="buttons-row">
+        <button id="rollBtn" class="mc-button">ROLL ITEM</button>
+        <button id="recipeBtn" class="mc-button">SHOW RECIPE</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> TheGoodCake — Fan-made Minecraft Item Picker</p>
+    <p>Not affiliated with Mojang Studios or Microsoft.</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+  
+</body>
+</html>
