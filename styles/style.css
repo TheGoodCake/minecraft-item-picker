@@ -55,10 +55,6 @@
 	  overflow: hidden;
     }
 
-    footer {
-      height: 5vh;
-    }
-	
 	.options-section {
 	  flex-shrink: 0;
 	}
