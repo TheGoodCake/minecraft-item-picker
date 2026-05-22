@@ -24,7 +24,7 @@
     }
 
     body {
-      height: 100vh;
+      height: 100dvh;
       display: flex;
       flex-direction: column;
 	  
@@ -41,7 +41,7 @@
     }
 	
 	header {
-      height: 20vh;
+      height: 20dvh;
     }
 
     main {
